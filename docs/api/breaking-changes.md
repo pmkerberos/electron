@@ -81,6 +81,10 @@ powerMonitor.querySystemIdleTime(callback)
 const idleTime = getSystemIdleTime()
 ```
 
+## Preload scripts outside of app path are not allowed
+
+For security reasons, preload scripts can only be loaded from the app path (`app.getAppPath()`).
+
 # Planned Breaking API Changes (5.0)
 
 ## `new BrowserWindow({ webPreferences })`
